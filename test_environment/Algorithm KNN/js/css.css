@@ -1,0 +1,204 @@
+html,
+body {
+   padding: 0;
+   margin: 0;
+   width: 100%;
+   height: auto;
+   font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.container {
+   width: 100%;
+   height: 100%;
+   background-color: rgb(163, 221, 177)
+}
+
+.container>div {
+   padding: 2ch 4ch;
+}
+
+table {
+   background: #FFF;
+}
+
+table>thead th {
+   background-color: rgb(87, 131, 208);
+   color: #FFF;
+}
+
+table>tbody td {
+   background-color: rgb(202, 209, 255);
+}
+
+table>caption {
+   background: rgb(87, 131, 208);
+   color: #FFF;
+   font-weight: bold;
+   border: 1.5px solid #FFF;
+   border-bottom: none;
+}
+
+table>thead th,
+table>tbody td,
+table>caption {
+   padding: 10px;
+   padding: 10px;
+}
+
+#colorsContainer {
+   height: calc(100vh - 100px);
+   overflow: auto;
+}
+
+#colorsContainer .flex-colors:nth-child(2n+1) {
+   background-color: rgba(160, 160, 228, 0.776);
+}
+
+#colorsContainer .flex-colors:nth-child(2n) {
+   background-color: rgba(92, 131, 223, 0.415);
+}
+
+.flex-colors {
+   position: relative;
+   display: flex;
+   padding: 5ch 0;
+}
+
+.flex-colors>div {
+   width: 50%;
+   float: left;
+   display: flex;
+   justify-content: center;
+   height: 100%;
+}
+
+.btn-container button {
+   border: none;
+   background: none;
+   display: block;
+   float: left;
+   color: #FFF;
+   font-weight: bold;
+   width: 50%;
+   padding: 1ch 2ch;
+   background: rgb(37, 43, 140);
+   cursor: pointer;
+   animation-name: btnhover2;
+   animation-duration: .3s;
+   animation-timing-function: ease-in-out;
+   animation-direction: reverse;
+}
+
+button:hover {
+   animation-name: btnhover;
+   animation-duration: .3s;
+   animation-timing-function: ease-in-out;
+   animation-fill-mode: forwards;
+   animation-direction: normal;
+}
+
+.hidden {
+   display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+   .flex-colors>div {
+      width: 100%;
+   }
+}
+
+@keyframes btnhover {
+
+   0% {
+      background: radial-gradient(circle, rgb(8, 14, 122) 0%, rgb(37, 43, 140) 10%, rgb(37, 43, 140) 100%);
+   }
+
+   10% {
+      background: radial-gradient(circle, rgb(8, 14, 122) 10%, rgb(37, 43, 140) 20%, rgb(37, 43, 140) 100%);
+   }
+
+   20% {
+      background: radial-gradient(circle, rgb(8, 14, 122) 20%, rgb(37, 43, 140) 30%, rgb(37, 43, 140) 100%);
+   }
+
+   30% {
+      background: radial-gradient(circle, rgb(8, 14, 122) 30%, rgb(37, 43, 140) 40%, rgb(37, 43, 140) 100%);
+   }
+
+   40% {
+      background: radial-gradient(circle, rgb(8, 14, 122) 40%, rgb(37, 43, 140) 50%, rgb(37, 43, 140) 100%);
+   }
+
+   50% {
+      background: radial-gradient(circle, rgb(8, 14, 122) 50%, rgb(37, 43, 140) 60%, rgb(37, 43, 140) 100%);
+   }
+
+   60% {
+      background: radial-gradient(circle, rgb(8, 14, 122) 60%, rgb(37, 43, 140) 70%, rgb(37, 43, 140) 100%);
+   }
+
+   70% {
+      background: radial-gradient(circle, rgb(8, 14, 122) 70%, rgb(37, 43, 140) 80%, rgb(37, 43, 140) 100%);
+   }
+
+   80% {
+      background: radial-gradient(circle, rgb(8, 14, 122) 80%, rgb(37, 43, 140) 90%, rgb(37, 43, 140) 100%);
+   }
+
+   90% {
+      background: radial-gradient(circle, rgb(8, 14, 122) 90%, rgb(37, 43, 140) 100%);
+   }
+
+   100% {
+      background: radial-gradient(circle, rgb(8, 14, 122) 0%, rgb(8, 14, 122) 100%);
+   }
+
+}
+
+@keyframes btnhover2 {
+
+   0% {
+      background: radial-gradient(circle, rgb(8, 14, 122) 0%, rgb(37, 43, 140) 10%, rgb(37, 43, 140) 100%);
+   }
+
+   10% {
+      background: radial-gradient(circle, rgb(8, 14, 122) 10%, rgb(37, 43, 140) 20%, rgb(37, 43, 140) 100%);
+   }
+
+   20% {
+      background: radial-gradient(circle, rgb(8, 14, 122) 20%, rgb(37, 43, 140) 30%, rgb(37, 43, 140) 100%);
+   }
+
+   30% {
+      background: radial-gradient(circle, rgb(8, 14, 122) 30%, rgb(37, 43, 140) 40%, rgb(37, 43, 140) 100%);
+   }
+
+   40% {
+      background: radial-gradient(circle, rgb(8, 14, 122) 40%, rgb(37, 43, 140) 50%, rgb(37, 43, 140) 100%);
+   }
+
+   50% {
+      background: radial-gradient(circle, rgb(8, 14, 122) 50%, rgb(37, 43, 140) 60%, rgb(37, 43, 140) 100%);
+   }
+
+   60% {
+      background: radial-gradient(circle, rgb(8, 14, 122) 60%, rgb(37, 43, 140) 70%, rgb(37, 43, 140) 100%);
+   }
+
+   70% {
+      background: radial-gradient(circle, rgb(8, 14, 122) 70%, rgb(37, 43, 140) 80%, rgb(37, 43, 140) 100%);
+   }
+
+   80% {
+      background: radial-gradient(circle, rgb(8, 14, 122) 80%, rgb(37, 43, 140) 90%, rgb(37, 43, 140) 100%);
+   }
+
+   90% {
+      background: radial-gradient(circle, rgb(8, 14, 122) 90%, rgb(37, 43, 140) 100%);
+   }
+
+   100% {
+      background: radial-gradient(circle, rgb(8, 14, 122) 0%, rgb(8, 14, 122) 100%);
+   }
+
+}
