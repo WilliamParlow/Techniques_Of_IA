@@ -30,7 +30,7 @@ var tempInterval = setInterval(() => {
 
    temperatures.push(tempVal);
    setBodyBackground();
-   
+
    console.log(temperatures);
 
 },1000);
@@ -54,3 +54,23 @@ function setBodyBackground() {
    }
 
 }
+
+window.addEventListener('load', () => {
+
+   document.addEventListener('keydown', ev => {
+
+      ev.preventDefault();
+
+      if (event.keyCode == 38) {
+
+         $('.btn input').value = eval(`${$('.btn input').value} + 1`);
+
+      } else if (event.keyCode == 40) {
+         
+         $('.btn input').value = eval(`${$('.btn input').value} - 1`);
+
+      }
+
+   });
+
+});
