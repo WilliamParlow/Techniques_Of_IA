@@ -16,16 +16,21 @@ var tempInterval = setInterval(() => {
    minTemp = getMediaValue() - variation;
    maxTemp = getMediaValue() + variation;
 
-   if (tempVal < minTemp || tempVal > maxTemp) {
-      $('body').style.background = '#900';
-   } else {
-      $('body').style.background = '#090';
-   }
-
-   $('.temp').innerHTML = `Temperatura<br /> ${tempVal}`;
+   $('.temp').innerHTML = `
+      <div>
+         Min<br /> ${minTemp.toFixed(2)}
+      </div>
+      <div>
+         Temperatura<br /> ${tempVal}
+      </div>
+      <div>
+         Max<br /> ${maxTemp.toFixed(2)}
+      </div>
+   `;
 
    temperatures.push(tempVal);
-
+   setBodyBackground();
+   
    console.log(temperatures);
 
 },1000);
@@ -37,5 +42,15 @@ function getMediaValue() {
    }
 
    return temperatures.reduce((lastVal, actualVal) => lastVal + actualVal) / temperatures.length;
+
+}
+
+function setBodyBackground() {
+
+   if (tempVal < minTemp || tempVal > maxTemp) {
+      $('body').style.background = '#900';
+   } else {
+      $('body').style.background = '#090';
+   }
 
 }
