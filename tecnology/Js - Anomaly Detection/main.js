@@ -2,7 +2,7 @@
 
 var $ = document.querySelector.bind(document);
 
-const variation = 3;
+var variation;
 
 var temperatures = [];
 
@@ -12,7 +12,8 @@ var tempVal;
 
 var tempInterval = setInterval(() => {
    
-   tempVal = Number($('.btn input').value);
+   tempVal = Number($('#temp').value);
+   variation = Number($('#variacao').value);
    minTemp = getMediaValue() - variation;
    maxTemp = getMediaValue() + variation;
 
@@ -63,11 +64,19 @@ window.addEventListener('load', () => {
 
       if (event.keyCode == 38) {
 
-         $('.btn input').value = eval(`${$('.btn input').value} + 1`);
+         $('#temp').value = eval(`${$('#temp').value} + 1`);
 
       } else if (event.keyCode == 40) {
          
-         $('.btn input').value = eval(`${$('.btn input').value} - 1`);
+         $('#temp').value = eval(`${$('#temp').value} - 1`);
+
+      } else if (event.keyCode == 37) {
+
+         $('#variacao').value = eval(`${$('#variacao').value} - 1`);
+
+      } else if (event.keyCode == 39) {
+
+         $('#variacao').value = eval(`${$('#variacao').value} + 1`);
 
       }
 
