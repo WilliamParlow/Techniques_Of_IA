@@ -3,19 +3,18 @@
 var $ = document.querySelector.bind(document);
 
 var variation;
-
 var temperatures = [];
-
-var minTemp = getMediaValue() - variation;
-var maxTemp = getMediaValue() - variation;
 var tempVal;
+var mediaTemperatura = getMediaValue();
+var minTemp, maxTemp;
 
 var tempInterval = setInterval(() => {
    
    tempVal = Number($('#temp').value);
    variation = Number($('#variacao').value);
-   minTemp = getMediaValue() - variation;
-   maxTemp = getMediaValue() + variation;
+   mediaTemperatura = getMediaValue();
+   minTemp = mediaTemperatura - variation;
+   maxTemp = mediaTemperatura + variation;
 
    $('.temp').innerHTML = `
       <div>
@@ -39,7 +38,7 @@ var tempInterval = setInterval(() => {
 function getMediaValue() {
 
    if (!temperatures.length) {
-      return 0;
+      return Number($('#temp').value);
    }
 
    return temperatures.reduce((lastVal, actualVal) => lastVal + actualVal) / temperatures.length;
@@ -47,7 +46,8 @@ function getMediaValue() {
 }
 
 function setBodyBackground() {
-
+   console.log('teset');
+   
    if (tempVal < minTemp || tempVal > maxTemp) {
       $('body').style.background = '#900';
    } else {
