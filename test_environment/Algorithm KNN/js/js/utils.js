@@ -3,7 +3,8 @@
 /////////////////
 
 
-const KNN = 7;
+var knnInput = document.querySelector('#knn');
+var KNN = parseInt(knnInput.value);
 
 
 var hiddenIndex = 0;
@@ -43,7 +44,6 @@ var newColors = [
    new ColorRGB(237, 45, 100),
    new ColorRGB(1, 50, 101),
    new ColorRGB(67, 121, 12),
-
 ];
 
 var $ = document.querySelector.bind(document);

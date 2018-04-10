@@ -72,6 +72,19 @@ table>caption {
    height: 100%;
 }
 
+.btn-knn-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.btn-knn-container input {
+   border-radius: 2px;
+   border: none;
+   padding: .40rem;
+   outline: none;
+}
+
 .btn-container button {
    border: none;
    background: none;
@@ -108,97 +121,73 @@ button:hover {
 }
 
 @keyframes btnhover {
-
    0% {
       background: radial-gradient(circle, rgb(8, 14, 122) 0%, rgb(37, 43, 140) 10%, rgb(37, 43, 140) 100%);
    }
-
    10% {
       background: radial-gradient(circle, rgb(8, 14, 122) 10%, rgb(37, 43, 140) 20%, rgb(37, 43, 140) 100%);
    }
-
    20% {
       background: radial-gradient(circle, rgb(8, 14, 122) 20%, rgb(37, 43, 140) 30%, rgb(37, 43, 140) 100%);
    }
-
    30% {
       background: radial-gradient(circle, rgb(8, 14, 122) 30%, rgb(37, 43, 140) 40%, rgb(37, 43, 140) 100%);
    }
-
    40% {
       background: radial-gradient(circle, rgb(8, 14, 122) 40%, rgb(37, 43, 140) 50%, rgb(37, 43, 140) 100%);
    }
-
    50% {
       background: radial-gradient(circle, rgb(8, 14, 122) 50%, rgb(37, 43, 140) 60%, rgb(37, 43, 140) 100%);
    }
-
    60% {
       background: radial-gradient(circle, rgb(8, 14, 122) 60%, rgb(37, 43, 140) 70%, rgb(37, 43, 140) 100%);
    }
-
    70% {
       background: radial-gradient(circle, rgb(8, 14, 122) 70%, rgb(37, 43, 140) 80%, rgb(37, 43, 140) 100%);
    }
-
    80% {
       background: radial-gradient(circle, rgb(8, 14, 122) 80%, rgb(37, 43, 140) 90%, rgb(37, 43, 140) 100%);
    }
-
    90% {
       background: radial-gradient(circle, rgb(8, 14, 122) 90%, rgb(37, 43, 140) 100%);
    }
-
    100% {
       background: radial-gradient(circle, rgb(8, 14, 122) 0%, rgb(8, 14, 122) 100%);
    }
-
 }
 
 @keyframes btnhover2 {
-
    0% {
       background: radial-gradient(circle, rgb(8, 14, 122) 0%, rgb(37, 43, 140) 10%, rgb(37, 43, 140) 100%);
    }
-
    10% {
       background: radial-gradient(circle, rgb(8, 14, 122) 10%, rgb(37, 43, 140) 20%, rgb(37, 43, 140) 100%);
    }
-
    20% {
       background: radial-gradient(circle, rgb(8, 14, 122) 20%, rgb(37, 43, 140) 30%, rgb(37, 43, 140) 100%);
    }
-
    30% {
       background: radial-gradient(circle, rgb(8, 14, 122) 30%, rgb(37, 43, 140) 40%, rgb(37, 43, 140) 100%);
    }
-
    40% {
       background: radial-gradient(circle, rgb(8, 14, 122) 40%, rgb(37, 43, 140) 50%, rgb(37, 43, 140) 100%);
    }
-
    50% {
       background: radial-gradient(circle, rgb(8, 14, 122) 50%, rgb(37, 43, 140) 60%, rgb(37, 43, 140) 100%);
    }
-
    60% {
       background: radial-gradient(circle, rgb(8, 14, 122) 60%, rgb(37, 43, 140) 70%, rgb(37, 43, 140) 100%);
    }
-
    70% {
       background: radial-gradient(circle, rgb(8, 14, 122) 70%, rgb(37, 43, 140) 80%, rgb(37, 43, 140) 100%);
    }
-
    80% {
       background: radial-gradient(circle, rgb(8, 14, 122) 80%, rgb(37, 43, 140) 90%, rgb(37, 43, 140) 100%);
    }
-
    90% {
       background: radial-gradient(circle, rgb(8, 14, 122) 90%, rgb(37, 43, 140) 100%);
    }
-
    100% {
       background: radial-gradient(circle, rgb(8, 14, 122) 0%, rgb(8, 14, 122) 100%);
    }
-
 }

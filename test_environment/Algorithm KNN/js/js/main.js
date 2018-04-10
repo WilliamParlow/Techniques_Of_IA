@@ -26,7 +26,6 @@ function getNewColorClass(rgbNewColor, baseColors) {
    let nearestBaseColors = baseColors.slice(0, KNN);
 
    nearestBaseColors.forEach(color => {
-      console.log();
       
       if (color.classColor == 1) {
          counters.red++;
@@ -35,6 +34,7 @@ function getNewColorClass(rgbNewColor, baseColors) {
       } else {
          counters.blue++;
       }
+
    });
    
    if (counters.red > counters.green && counters.red > counters.blue) {
@@ -61,6 +61,13 @@ window.onload = ev => {
          hiddenControl(ev);
       
       };
+
+   });
+
+   document.querySelector('#knn').addEventListener('change', () => {
+
+      KNN = parseInt(knnInput.value);
+      init();
 
    });
 
