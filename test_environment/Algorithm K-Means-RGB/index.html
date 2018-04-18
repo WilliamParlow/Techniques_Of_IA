@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="css/style.css">
+   <title>K-Means</title>
+</head>
+
+<body>
+
+   <div class="container">
+
+
+      <div class="rgb-form">
+         <form id="form_rgb">
+            <div class="field">
+               <input type="number" name="r" id="r" min="0" max="255" placeholder="Red">
+            </div>
+            <div class="field">
+               <input type="number" name="g" id="g" min="0" max="255" placeholder="Green">
+            </div>
+            <div class="field">
+               <input type="number" name="b" id="b" min="0" max="255" placeholder="Blue">
+            </div>
+            <div class="field btn-field">
+               <input type="submit" name="new" id="new" value="New RGB Color">
+            </div>
+         </form>
+      </div>
+
+
+      <div class="table-container">
+
+         <div class="table-vals">
+            <table class="vals">
+               <thead>
+                  <tr>
+                     <th>R</th>
+                     <th>G</th>
+                     <th>B</th>
+                     <th>Distance</th>
+                     <th>Class</th>
+                  </tr>
+               </thead>
+               <tbody></tbody>
+            </table>
+         </div>
+
+         <div class="table-new">
+            <table class="new">
+               <thead>
+                  <tr>
+                     <th>R</th>
+                     <th>G</th>
+                     <th>B</th>
+                     <th>Class</th>
+                  </tr>
+               </thead>
+               <tbody></tbody>
+            </table>
+         </div>
+
+      </div>
+
+
+   </div>
+
+   <script src="./js/classes.js"></script>
+   <script src="./js/utils.js"></script>
+   <script src="./js/template.js"></script>
+   <script src="./js/kmeans.js"></script>
+   <script src="./js/main.js"></script>
+
+</body>
+
+</html>
